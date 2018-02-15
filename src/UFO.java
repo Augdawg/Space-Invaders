@@ -17,7 +17,7 @@ public class UFO implements Sprite {
 		r = new Random();
 		try {
 			img = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\ufo.png"));
+					+ "\\..\\resources\\ufo.png"));
 
 		} catch (IOException e) {
 			e.printStackTrace();

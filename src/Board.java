@@ -51,11 +51,11 @@ public class Board extends JPanel {
 			lives.add(new Player(this));
 		try {
 			background = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\background.png"));
+					+ "\\..\\resources\\background.png"));
 			logo = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\Logo.png"));
+					+ "\\..\\resources\\Logo.png"));
 			pauseImg = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\pause_screen.png"));
+					+ "\\..\\resources\\pause_screen.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -372,7 +372,7 @@ public class Board extends JPanel {
 	private void playSound(String fileName) {
 		try {
 			File yourFile = new File(System.getProperty("user.dir")
-					+ "\\resources\\" + fileName);
+					+ "\\..\\resources\\" + fileName);
 			AudioInputStream stream = AudioSystem.getAudioInputStream(yourFile);
 			AudioFormat format = stream.getFormat();
 			DataLine.Info info = new DataLine.Info(Clip.class, format);

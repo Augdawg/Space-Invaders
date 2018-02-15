@@ -20,10 +20,10 @@ public class EnemyBullet {
 		try {
 			if (t == 0)
 				img = ImageIO.read(new File(System.getProperty("user.dir")
-						+ "\\resources\\enemy_bullet1.png"));
+						+ "\\..\\resources\\enemy_bullet1.png"));
 			else
 				img = ImageIO.read(new File(System.getProperty("user.dir")
-						+ "\\resources\\enemy_bullet2.png"));
+						+ "\\..\\resources\\enemy_bullet2.png"));
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

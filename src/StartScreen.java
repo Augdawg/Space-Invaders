@@ -13,8 +13,8 @@ public class StartScreen extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private Image img;
 	private Dimension d;
-	private boolean done;
-	private InputManager m;
+	private volatile boolean done;
+	private volatile InputManager m;
 
 	public StartScreen(Component c) {
 		m = new InputManager();
@@ -25,7 +25,7 @@ public class StartScreen extends JPanel {
 		setFocusable(true);
 		try {
 			img = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\start_screen.png"));
+					+ "\\..\\resources\\start_screen.png"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

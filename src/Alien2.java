@@ -9,9 +9,9 @@ public class Alien2 extends Enemy{
 		super(x,y,20);
 		try {
 			img1 = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\Enemy21.png"));
+					+ "\\..\\resources\\Enemy21.png"));
 			img2 = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\Enemy22.png"));
+					+ "\\..\\resources\\Enemy22.png"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

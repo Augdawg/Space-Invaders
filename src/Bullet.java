@@ -11,7 +11,7 @@ public class Bullet {
 	
 	public Bullet(Player p) {
 		try {
-			img = ImageIO.read(new File(System.getProperty("user.dir") + "\\resources\\bullet.png"));
+			img = ImageIO.read(new File(System.getProperty("user.dir") + "\\..\\resources\\bullet.png"));
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

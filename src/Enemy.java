@@ -20,7 +20,7 @@ public class Enemy implements Sprite {
 		swapped = false;
 		img = img1;
 		try {
-			imgd = ImageIO.read(new File(System.getProperty("user.dir") + "\\resources\\explosion.png"));
+			imgd = ImageIO.read(new File(System.getProperty("user.dir") + "\\..\\resources\\explosion.png"));
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

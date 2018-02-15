@@ -3,8 +3,8 @@ import javax.swing.JFrame;
 public class GameWindow extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-	private Board board;
-	private GameOver go;
+	private volatile Board board;
+	private volatile GameOver go;
 
 	public GameWindow() {
 		board = new Board();
@@ -18,10 +18,10 @@ public class GameWindow extends JFrame {
 		setTitle("Space Invaders");
 		setIconImage(board.getLogo());
 		start.requestFocusInWindow();
-		//start.start();
-		//while(!start.done()) {
+		start.start();
+		while(!start.done()) {
 			
-		//}
+		}
 		setContentPane(board);
 		board.requestFocusInWindow();
 		board.start();

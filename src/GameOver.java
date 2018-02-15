@@ -18,7 +18,7 @@ public class GameOver extends JPanel{
 	private Dimension d;
 	private Board b;
 	private boolean done;
-	private InputManager m;
+	private volatile InputManager m;
 	public GameOver(Component c){
 		m = new InputManager();
 		addKeyListener(m);
@@ -28,7 +28,7 @@ public class GameOver extends JPanel{
 		setSize(d);
 		setFocusable(true);
 		try {
-			img = ImageIO.read(new File(System.getProperty("user.dir") + "\\resources\\gameover.jpg"));
+			img = ImageIO.read(new File(System.getProperty("user.dir") + "\\..\\resources\\gameover.jpg"));
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

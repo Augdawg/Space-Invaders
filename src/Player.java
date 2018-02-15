@@ -13,9 +13,9 @@ public class Player {
 	private boolean recent;
 
 	public Player(Component c) {
-		try {
+		try {			
 			aImg = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\ship.png"));
+					+ "\\..\\resources\\ship.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -32,7 +32,7 @@ public class Player {
 		recent = false;
 		try {
 			dImg = ImageIO.read(new File(System.getProperty("user.dir")
-					+ "\\resources\\player_death.png"));
+					+ "\\..\\resources\\player_death.png"));
 		} catch (Exception e) {
 		}
 	}
